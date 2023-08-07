@@ -1,12 +1,10 @@
 import db from "../database/conection.js";
+import * as Respository from "../repositories/djRepository.js";
 
 //getUser controller function
 export async function getUser(req, res) {
-  const sql = `SELECT * FROM dj`;
-  db.query(sql, (err, result) => {
-    if (err) throw err;
-    res.json(result);
-  });
+  const row = await Respository.findAll();
+  res.json(row);
 }
 
 //getUserById controller function
