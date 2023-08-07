@@ -11,26 +11,7 @@ app.use(express.json());
 app.get("/user", Controller.getUser);
 app.get("/user/:id", Controller.getUserById);
 app.post("/user", Controller.createUser);
-
-//update user
-app.put("/user/:id", (req, res) => {
-  const id = parseInt(req.params.id);
-  const { nome, vertente } = req.body;
-  const sql = `UPDATE dj SET nome='${nome}', vertente='${vertente}' WHERE id=${id}`;
-  db.query(sql, (err, result) => {
-    if (err) throw err;
-    res.json(result);
-  });
-});
-
-//delete user
-app.delete("/user/:id", (req, res) => {
-  const id = parseInt(req.params.id);
-  const sql = `DELETE FROM dj WHERE id=${id}`;
-  db.query(sql, (err, result) => {
-    if (err) throw err;
-    res.json(result);
-  });
-});
+app.put("/user/:id", Controller.updateUser);
+app.delete("/user/:id", Controller.deleteUser);
 
 export default app;
