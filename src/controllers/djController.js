@@ -10,11 +10,8 @@ export async function getUser(req, res) {
 //getUserById controller function
 export async function getUserById(req, res) {
   const id = parseInt(req.params.id);
-  const sql = `SELECT * FROM dj WHERE id=${id}`;
-  db.query(sql, (err, result) => {
-    if (err) throw err;
-    res.json(result);
-  });
+  const row = await Respository.findById(id);
+  res.json(row);
 }
 
 //createUser controller function
