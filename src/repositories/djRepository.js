@@ -21,3 +21,14 @@ export async function findById(id) {
     });
   });
 }
+
+//create repository function and promisses
+export async function create(nome, vertente) {
+  const sql = `INSERT INTO dj (nome, vertente) VALUES ('${nome}', '${vertente}')`;
+  return new Promise((resolve, reject) => {
+    db.query(sql, (err, result) => {
+      if (err) reject(err);
+      resolve(result);
+    });
+  });
+}

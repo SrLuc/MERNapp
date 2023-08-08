@@ -17,11 +17,8 @@ export async function getUserById(req, res) {
 //createUser controller function
 export async function createUser(req, res) {
   const { nome, vertente } = req.body;
-  const sql = `INSERT INTO dj (nome, vertente) VALUES ('${nome}', '${vertente}')`;
-  db.query(sql, (err, result) => {
-    if (err) throw err;
-    res.json(result);
-  });
+  const row = await Respository.create(nome, vertente);
+  res.json(row);
 }
 
 //updateUser controller function
@@ -35,7 +32,7 @@ export async function updateUser(req, res) {
   });
 }
 
-//deleteUser controller function
+//deleteUser controller function teste
 export async function deleteUser(req, res) {
   const id = parseInt(req.params.id);
   const sql = `DELETE FROM dj WHERE id=${id}`;

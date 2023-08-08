@@ -5,7 +5,7 @@ const db = mysql.createConnection({
   port: 3306,
   user: "root",
   password: "root",
-  database: "mernapp",
+  database: "psydjs",
 });
 
 export default db;
