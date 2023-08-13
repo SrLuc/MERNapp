@@ -6,11 +6,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.json());
 
-//root router
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
-
 //controller functions
 app.get("/user", Controller.getUser);
 app.get("/user/:id", Controller.getUserById);
