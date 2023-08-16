@@ -1,5 +1,6 @@
 import axios, { AxiosResponse } from "axios";
 import { useEffect, useState } from "react";
+import Container from "../Components/UIelements/Container";
 
 interface Dj {
   id: number;
@@ -24,12 +25,19 @@ function Home() {
 
   return (
     <>
-      <h1>Djs List</h1>
-      <ul>
-        {repos.map(({ id, nome }: Dj) => {
-          return <li key={id}>{nome}</li>;
-        })}
-      </ul>
+      <Container>
+        <h1>Djs List</h1>
+        <ul>
+          {repos.map(({ id, nome, vertente }: Dj) => {
+            return (
+              <li key={id}>
+                <span>{nome}</span>
+                <span>{vertente}</span>
+              </li>
+            );
+          })}
+        </ul>
+      </Container>
     </>
   );
 }
