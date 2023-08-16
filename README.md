@@ -1,14 +1,29 @@
 
 # MERNapp
 
-This is a back-end application project developed with JavaScript using Express and Node.js technologies, along with the MySQL database.
+This is a **Fullstack application**  project developed with *JavaScript* using *Express* and *Node.js* technologies, to develop a **RestFull API** with connection to a *MySQL* database.
 
-The purpose of this application is to provide CRUD (Create, Read, Update, Delete) operations to manage data in a Relational database.
+To render the API data, I'm using ReactJS with *Typescript* template, and also using the *Styled-Componen*t CSS library to style the project.
 
-This project follows the MVC (Model-View-Controller) architectural pattern for a more organized and modular code base.
+The purpose of this application is to **provide CRUD** (Create, Read, Update, Delete) operations to manage data in a Relational database.
 
-This project is my own and serves to complement my studies in backend programming using NodeJs and adjacent libraries.
-## Stack
+**This project follows the MVC** (Model-View-Controller) designed pattern for a more organized and modular code base.
 
-**Back-end:** Node, Express, MySQL, DotEnv, 
+*This project is still in development*... and your idea is my own.
+
+In addition, this project serves to complement my studies in backend/fullstack programming using market tools with the use of libraries.
+
+
+## Technical Features
+
+- CRUD(Create, Read, Update, Delete)
+- Database Integration
+- MVC pattern
+- Typescript
+
+## Stack utilizada
+
+**Front-end:** React, Axios, Styled-Component, 
+
+**Back-end:** Node, Express, MySQL, CORS, dotEnv, bodyParse
 
