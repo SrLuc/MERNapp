@@ -23,7 +23,7 @@ In addition, this project serves to complement my studies in backend/fullstack p
 
 ## Stack utilizada
 
-**Front-end:** React, Axios, Styled-Component, 
+**Front-end:** React, Axios, Styled-Component, CSS Libraries
 
 **Back-end:** Node, Express, MySQL, CORS, dotEnv, bodyParse
 
