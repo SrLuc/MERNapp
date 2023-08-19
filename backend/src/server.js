@@ -8,9 +8,8 @@ db.connect((err) => {
     return console.log(err);
   } else {
     app.listen(process.env.API_ENDPOINT, () => {
-      console.log(`Server is running on port http://localhost:${process.env.API_ENDPOINT}`.bold);
+      console.log(`Server is running on port http://localhost:${process.env.API_ENDPOINT}`);
     });
-
-    console.log("Connected to database".bold);
+    console.log("Connected to database");
   }
 });
