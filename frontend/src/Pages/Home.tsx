@@ -12,7 +12,7 @@ function Home() {
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
-    let url = "http://localhost:4040/user";
+    const url = "http://localhost:4040/user";
     axios
       .get(url)
       .then((response: AxiosResponse) => {
