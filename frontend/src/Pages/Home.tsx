@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Container from "../Components/UIelements/Container";
 import ItemList from "../Components/UIelements/ItemList";
 import Header from "../Components/UIelements/Header";
+import { DeleteButton } from "../Components/UIelements/Buttons";
 
 interface Dj {
   id: number;
@@ -29,7 +30,7 @@ function Home() {
     <>
       <Container>
         <ul>
-         <Header title="DJs" />
+          <Header title="DJs" />
           {repos.map(({ id, nome, vertente }: Dj) => {
             return (
               <ItemList key={id}>
@@ -40,7 +41,7 @@ function Home() {
                 </section>
                 <div>
                   <button>Editar</button>
-                  <button>Excluir</button>
+                  <DeleteButton id={id}>Delete</DeleteButton>
                 </div>
               </ItemList>
             );

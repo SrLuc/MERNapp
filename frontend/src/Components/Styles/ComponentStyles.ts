@@ -102,3 +102,10 @@ export const StyledCreate = styled.section`
     }
   }
 `;
+
+export const StyledDeleteBtn = styled.button`
+  font-family: monospace;
+  background-color: #f3f7fe;
+  color: red; 
+`
+
