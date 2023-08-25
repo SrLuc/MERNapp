@@ -26,11 +26,11 @@ const Create = () => {
         </div>
         <div>
           <label>Name</label>
-          <input type="text" name="nome" />
+          <input required type="text" name="nome" />
         </div>
         <div>
           <label>Strand</label>
-          <input type="text" name="vertente" />
+          <input required type="text" name="vertente" />
         </div>
         <article>
           <button type="submit">Add Dj</button>
