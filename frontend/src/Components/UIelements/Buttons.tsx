@@ -40,3 +40,6 @@ export const DeleteButton = ({ children, id }: BtnProps) => {
   );
 };
 
+export const UpdateButton = ({ children, id }: BtnProps) => {
+  return <S.StyledUpdateBtn>{children}</S.StyledUpdateBtn>;
+};

@@ -4,6 +4,7 @@ import Container from "../Components/UIelements/Container";
 import ItemList from "../Components/UIelements/ItemList";
 import Header from "../Components/UIelements/Header";
 import { DeleteButton } from "../Components/UIelements/Buttons";
+import BasicModal from "../Components/UIelements/BasicModal";
 
 interface Dj {
   id: number;
@@ -40,7 +41,12 @@ function Home() {
                   <span>{vertente}</span>
                 </section>
                 <div>
-                  <button>Editar</button>
+                  <BasicModal
+                    nome={nome}
+                    key={id}
+                    id={id}
+                    vertente={vertente}
+                  />
                   <DeleteButton id={id}>Delete</DeleteButton>
                 </div>
               </ItemList>

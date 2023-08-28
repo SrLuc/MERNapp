@@ -105,7 +105,42 @@ export const StyledCreate = styled.section`
 
 export const StyledDeleteBtn = styled.button`
   font-family: monospace;
-  background-color: #f3f7fe;
-  color: red; 
-`
+  color: red;
+`;
 
+export const StyledUpdateBtn = styled.button`
+  font-family: monospace;
+  color: green;
+  padding: 10px;
+  border: none;
+
+  &:hover {
+    background-color: green;
+    color: #fff;
+  }
+`;
+
+export const StyledForm = styled.form`
+  height: 150px;
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 0;
+    label {
+      font-size: 18px;
+    }
+
+    input {
+      width: 100%;
+      height: 30px;
+      padding: 10px;
+    }
+  }
+`;
+
+export const StyledButton = styled.button`
+  font-family: monospace;
+  background-color: #f3f7fe;
+`
