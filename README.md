@@ -17,13 +17,13 @@ In addition, this project serves to complement my studies in backend/fullstack p
 ## Technical Features
 
 - CRUD(Create, Read, Update, Delete)
-- Database Integration
-- MVC pattern
-- Typescript
+- MySQL Database Integration
+- API with MVC pattern
+- Typescript with Styled Components
 
 ## Stack utilizada
 
-**Front-end:** React, Axios, Styled-Component, CSS Libraries
+**Front-end:** React, Axios, Styled-Component, CSS Libraries, Material UI
 
 **Back-end:** Node, Express, MySQL, CORS, dotEnv, bodyParse
 
