@@ -8,12 +8,9 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
-    body{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        font-family: 'Inter', sans-serif;
+    body{        
+        //font-family: 'Inter', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
     }
 
 `;

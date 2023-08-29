@@ -35,11 +35,8 @@ function Home() {
           {repos.map(({ id, nome, vertente }: Dj) => {
             return (
               <ItemList key={id}>
-                <section>
-                  <span>{id}</span>
-                  <span>{nome}</span>
-                  <span>{vertente}</span>
-                </section>
+                <span>{nome}</span>
+                <span>{vertente}</span>
                 <div>
                   <BasicModal
                     nome={nome}
@@ -47,7 +44,7 @@ function Home() {
                     id={id}
                     vertente={vertente}
                   />
-                  <DeleteButton id={id}>Delete</DeleteButton>
+                  <DeleteButton id={id}>Delete</DeleteButton> 
                 </div>
               </ItemList>
             );

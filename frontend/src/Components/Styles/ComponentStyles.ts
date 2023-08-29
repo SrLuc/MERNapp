@@ -1,146 +1,86 @@
 import styled from "styled-components";
 
-export const StyledContainer = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
-`;
+export const StyledContainer = styled.section``;
 
 export const StyledLi = styled.li`
-  list-style: none;
   display: flex;
-  justify-content: space-between;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  padding: 10px;
-  margin: 10px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  
 
-  section {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-
-    span {
-      text-align: center;
-      width: 50%;
-    }
+  span {
+    font-size: 20px;
+    text-align: left;
+    width: 40%;
   }
 
   div {
     display: flex;
     justify-content: space-around;
-    width: 20%;
-
-    button {
-      border: none;
-      background-color: transparent;
-      cursor: pointer;
-      font-size: 15px;
-    }
+    flex-direction: column;
   }
 `;
 
 export const StyledHeader = styled.header`
-  h1 {
-    padding: 15px;
-    font-size: 15px;
-    margin: 10px;
-    background-color: #f5f5f5;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  }
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 `;
 
 export const StyledCreate = styled.section`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
   form {
-    margin: 10px;
-    padding: 40px;
-    display: flex;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-
-    div {
-      width: 60%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-
-      label {
-        margin: 10px;
-        font-size: 20px;
-      }
-
-      input {
-        margin: 10px;
-        padding: 20px;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
-          rgb(209, 213, 219) 0px 0px 0px 1px inset;
-      }
-    }
-
-    article {
-      width: 40%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      button {
-        font-family: monospace;
-        background-color: #f3f7fe;
-        color: #3b82f6;
-        border: none;
-        width: 170px;
-        height: 65px;
-        transition: 0.3s;
-
-        &:hover {
-          background-color: #3b82f6;
-          box-shadow: 0 0 0 5px #3b83f65f;
-          color: #fff;
-        }
-      }
-    }
-  }
-`;
-
-export const StyledDeleteBtn = styled.button`
-  font-family: monospace;
-  color: red;
-`;
-
-export const StyledUpdateBtn = styled.button`
-  font-family: monospace;
-  color: green;
-  padding: 10px;
-  border: none;
-
-  &:hover {
-    background-color: green;
-    color: #fff;
-  }
-`;
-
-export const StyledForm = styled.form`
-  height: 150px;
-
-  article {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin: 10px 0;
+    padding: 15px;
+
     label {
-      font-size: 18px;
+      font-size: 25px;
     }
 
     input {
-      width: 100%;
-      height: 30px;
-      padding: 10px;
+      padding: 15px;
+    }
+
+    button {
+      margin: 15px 0;
+      padding: 15px;
+      font-size: 20px;
+      border: none;
+      background-color: #f3f7fe;
+
+      &:hover {
+        background-color: #e7f0fd;
+      }
     }
   }
 `;
 
+//button to detele
+export const StyledDeleteBtn = styled.button`
+  margin: 5px 0;
+  padding: 3px;
+  font-size: 20px;
+  color: red;
+`;
+
+//button to update into modal
+export const StyledUpdateBtn = styled.button``;
+
+//styled button
 export const StyledButton = styled.button`
-  font-family: monospace;
-  background-color: #f3f7fe;
-`
+  margin: 5px 0;
+  padding: 3px;
+  font-size: 20px;
+  color: blue;
+`;
+
+//modal styles
+export const StyledForm = styled.form``;

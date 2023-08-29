@@ -20,21 +20,11 @@ const Create = () => {
     <S.StyledCreate>
       <Header title="Add New Dj" />
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>ID</label>
-          <input type="number" name="id" />
-        </div>
-        <div>
-          <label>Name</label>
-          <input required type="text" name="nome" />
-        </div>
-        <div>
-          <label>Strand</label>
-          <input required type="text" name="vertente" />
-        </div>
-        <article>
-          <button type="submit">Add Dj</button>
-        </article>
+        <label>Name</label>
+        <input required type="text" name="nome" />
+        <label>Strand</label>
+        <input required type="text" name="vertente" />
+        <button type="submit">Add Dj</button>
       </form>
     </S.StyledCreate>
   );
