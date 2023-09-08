@@ -36,7 +36,7 @@ In addition, this project serves to complement my studies in backend/fullstack p
 - in **backend** folder run *npm install*
 
 ### Step 2
-in the **backend** folder, create a **.env** file and inside it paste this code
+in the **backend** folder, on root of you project, create a **.env** file and inside it paste this code
  - DB_HOST = 'localhost'
  - DB_PORT = 3306
  - DB_USER = *'you database user'*
