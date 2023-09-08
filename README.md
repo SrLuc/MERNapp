@@ -48,6 +48,9 @@ in the **backend** folder, on root of you project, create a **.env** file and in
 - in **frontend** folder run *npm run dev* to inicialize the view
 - in **backend** folder run *npm run start* to inicialize the server
 
+### Step 4
+- Enjoy!
+
 ## Preview
 [Dj List.webm](https://github.com/SrLuc/MERNapp/assets/100430135/79940e64-7757-48ae-885e-6a5fdf145ade)
 
