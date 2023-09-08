@@ -21,9 +21,30 @@ In addition, this project serves to complement my studies in backend/fullstack p
 - *API* with **MVC** pattern
 - *Typescript* with *Styled Components*
 
-## Stack utilizada
+## Stack 
 
 **Front-end:** React, Axios, Styled-Component, Material UI
 
 **Back-end:** Node, Express, MySQL, CORS, dotEnv, bodyParse
+
+
+## How use
+### Step 1
+- Download the project using *git clone*
+- Open the vscode and the terminal
+- in **frontend** folder run *npm install*
+- in **backend** folder run *npm install*
+
+### Step 2
+in the **backend** folder, create a **.env** file and inside it paste this code
+ - DB_HOST = 'localhost'
+ - DB_PORT = 3306
+ - DB_USER = *'you database user'*
+ - DB_PASS = *you database password*
+ - DB_NAME = 'psydjs'
+ - API_ENDPOINT = 4040
+
+### Step 3
+- in **frontend** folder run *npm run dev* to inicialize the view
+- in **backend** folder run *npm run start* to inicialize the server
 

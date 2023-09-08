@@ -83,4 +83,16 @@ export const StyledButton = styled.button`
 `;
 
 //modal styles
-export const StyledForm = styled.form``;
+export const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: space-around;
+`;
+
+//reverser view of the list
+export const StyledReverse = styled.div`
+  display: flex;
+  flex-direction: column-reverse;
+  
+`

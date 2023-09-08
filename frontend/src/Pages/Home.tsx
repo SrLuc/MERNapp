@@ -5,12 +5,21 @@ import ItemList from "../Components/UIelements/ItemList";
 import Header from "../Components/UIelements/Header";
 import { DeleteButton } from "../Components/UIelements/Buttons";
 import BasicModal from "../Components/UIelements/BasicModal";
+import * as S from "../Components/Styles/ComponentStyles";
 
 interface Dj {
   id: number;
   nome: string;
   vertente: string;
 }
+
+//ReverseView
+interface IReverseView {
+  children: React.ReactNode;
+}
+export const ReverseView = ({ children }: IReverseView) => {
+  return <S.StyledReverse>{children}</S.StyledReverse>;
+};
 
 function Home() {
   const [repos, setRepos] = useState([]);
@@ -32,6 +41,7 @@ function Home() {
       <Container>
         <ul>
           <Header title="DJs" />
+          <ReverseView>
           {repos.map(({ id, nome, vertente }: Dj) => {
             return (
               <ItemList key={id}>
@@ -44,11 +54,12 @@ function Home() {
                     id={id}
                     vertente={vertente}
                   />
-                  <DeleteButton id={id}>Delete</DeleteButton> 
+                  <DeleteButton id={id}>Delete</DeleteButton>
                 </div>
               </ItemList>
             );
           })}
+          </ReverseView>
         </ul>
       </Container>
     </>
