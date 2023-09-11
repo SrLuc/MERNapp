@@ -1,6 +1,5 @@
 import axios from "axios";
 import * as S from "../Styles/ComponentStyles";
-import Header from "./Header";
 
 const Create = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -18,7 +17,6 @@ const Create = () => {
 
   return (
     <S.StyledCreate>
-      <Header title="Add New Dj" />
       <form onSubmit={handleSubmit}>
         <label>Name</label>
         <input required type="text" name="nome" />

@@ -8,7 +8,9 @@ interface HeaderProps {
 const Header = ({ title, children }: HeaderProps) => {
   return (
     <S.StyledHeader>
-      <h1>{title}</h1>
+      <h4>Name</h4>
+      <h4>Strang</h4>
+      <h4>Action</h4>
       {children}
     </S.StyledHeader>
   );

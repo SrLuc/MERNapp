@@ -55,7 +55,7 @@ const BasicModal = ({ nome, id }: ModalProps) => {
           </Typography>
           <S.StyledForm onSubmit={handleFormSubmit}>
             <article>
-              <label>New Dj Name</label>
+              <label>Dj Name</label>
               <input required type="text" name="nome" />
             </article>
             <article>
